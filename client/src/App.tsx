@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Services from './pages/Services';
 import Booking from './pages/Booking';
+import ImageGenerator from './pages/ImageGenerator';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/services" component={Services} />
             <Route path="/booking" component={Booking} />
+            <Route path="/image-generator" component={ImageGenerator} />
           </Switch>
         </AnimatePresence>
       </main>
