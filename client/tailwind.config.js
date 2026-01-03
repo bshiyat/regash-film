@@ -1,28 +1,35 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./client/index.html",
-    "./client/src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        film: {
-          dark: '#0a0a0a',
-          darker: '#050505',
-          accent: '#ff6b35',
-          gold: '#ffd700',
-          silver: '#c0c0c0',
+        'film': {
+          50: '#f8f9fa',
+          100: '#e9ecef',
+          200: '#dee2e6',
+          900: '#0a0a0f',
+          950: '#05050a',
         },
+        'gold': {
+          400: '#ffd666',
+          500: '#ffc107',
+          600: '#ffb300',
+        },
+        'accent': {
+          500: '#ff6b35',
+          600: '#ff5722',
+        }
       },
       fontFamily: {
         display: ['Playfair Display', 'serif'],
         sans: ['Inter', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'film-grain': "url('data:image/svg+xml,%3Csvg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cfilter id=\"noiseFilter\"%3E%3CfeTurbulence type=\"fractalNoise\" baseFrequency=\"0.9\" numOctaves=\"3\" stitchTiles=\"stitch\"/%3E%3C/filter%3E%3Crect width=\"100%25\" height=\"100%25\" filter=\"url(%23noiseFilter)\"/%3E%3C/svg%3E')",
       },
     },
   },
